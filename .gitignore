@@ -1,0 +1,14 @@
+# Ignore virtual environments
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Model and large files
+*.pth
+*.pkl
+*.log
+
+# OS-specific
+.DS_Store
