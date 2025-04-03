@@ -8,14 +8,15 @@ A web app that performs **face and hair segmentation** on images using deep lear
 
 - ✅ Validates that image has only **one human face**
 - 🎯 Uses **BiSeNet** for high-quality face segmentation
-- 🎨 Outputs RGBA image with a **transparent background**
-- 📦 No need to store large models locally – downloads model from Google Drive
-- 🌐 Deployed with [Streamlit](https://streamlit.io)
-- ☁️ Runs on [Hugging Face Spaces](https://huggingface.co/spaces)
+- 🎨 Outputs RGBA image with a **transparent background*
 
 ---
 
 ## 💻 Setup Instructions
+
+### 🔹Download the zip folder and unzip it 
+
+### 🔹 then open the unzipped folder in vs code then cd face-segmentation2-main
 
 ### 🔹 Create & activate a virtual environment
 
@@ -39,11 +40,14 @@ Run Locally:-
 streamlit run app.py
 
 face-segmentation/
-├── app.py                # Streamlit UI
-├── face_segment_fin.py   # Processing logic (model, segmentation)
-├── model.py              # BiSeNet architecture
-├── requirements.txt      # Python dependencies
-├── README.md             # This file
+├── app.py                 # Streamlit UI
+├── face_segment_fin.py    # Core logic (model + preprocessing + auto model download)
+├── model.py               # BiSeNet architecture
+├── 79999_iter.pth         # 🔥 Model weights
+├── requirements.txt       # All required libraries
+├── README.md              # Full documentation
+└── .gitignore             # Prevent .pth/.png files from being tracked
+
 
 
 
